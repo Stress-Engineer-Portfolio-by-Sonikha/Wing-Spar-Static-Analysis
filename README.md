@@ -10,6 +10,14 @@ Demonstrate complete static strength analysis process: Load Path → Hand Calcul
 - **+2.5g symmetric maneuver** (Limit Load per CS-25 / FAR-25)
 - Ultimate Load Factor = 2.5g * 1.5 = **3.75g** 
 - Semi-span = 15 m
+- **Assumptions:**
+        * Aircraft MTOW = 80,000 kg → Weight per wing ≈ 392 kN (at 1g). [Assumption as per A320](https://www.aircraft.airbus.com/sites/g/files/jlcbta126/files/2025-01/AC_A320_0624.pdf)
+        * At +2.5g limit: Total lift per wing ≈ 980 kN.
+        * Wing structural + fuel weight per wing ≈ 120 kN
+        * Net upward force at 2.5g ≈ 860 kN.
+        * Lift distribution: Elliptical → w(x) = w_0 * (1 - (x/L) [linearly tapered distributed load]
+              - Max net distributed load at root w₀ = 115 kN/m
+              - Linearly decreases to 0 at tip.
 - Net root shear force ≈ **860 kN**
 - Root bending moment ≈ **4312.5 kNm**
 
