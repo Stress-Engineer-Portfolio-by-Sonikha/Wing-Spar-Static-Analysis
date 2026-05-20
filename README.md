@@ -16,7 +16,7 @@ Demonstrate complete static strength analysis process: Load Path → Hand Calcul
 ## 2. Load Path
 Aerodynamic lift → transferred via ribs to spar → web carries shear, flanges carry bending moment → reacted at wing root/fuselage attachment.
 
-<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/d7587cf0-6719-4cff-a809-757be60b7bda" />
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/d7587cf0-6719-4cff-a809-757be60b7bda" />
 
 ## 3. SFD & BMD
 - Hand calculations + Python implementation for linearly tapered distributed load.
