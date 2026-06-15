@@ -35,7 +35,7 @@ Aerodynamic lift → transferred via ribs to spar → web carries shear, flanges
 - Hand calculations + Python implementation for linearly tapered distributed load.
 - Critical section identified at **wing root**.
 
-![SFD and BMD](results/sfd_bmd_plot.png)
+![SFD and BMD]([results/sfd_bmd_plot.png](https://github.com/Stress-Engineer-Portfolio-by-Sonikha/Wing-Spar-Static-Analysis/blob/main/1_sfd_bmd_plot.png?raw=true))
 
 ## 4. Classical Stress Analysis (I-Beam)
 - Material: Aluminum 2024-T3 (Fy = 345 MPa, Fu = 440 MPa)
