@@ -38,21 +38,27 @@ Aerodynamic lift → transferred via ribs to spar → web carries shear, flanges
 <img width="1536" height="754" alt="1_sfd_bmd_plot" src="https://github.com/user-attachments/assets/e1691ef8-867e-493a-af58-13f8091c8495" />
 
 ## 4. Classical Stress Analysis (I-Beam)
-- Material: Aluminum 2024-T3 (Fy = 345 MPa, Fu = 440 MPa)
-- Geometry: h=450 mm, b=250 mm, tw=10 mm, tf=16 mm
-- Max bending stress (Limit): **XXX MPa**
-- Margin of Safety (Ultimate): **XXX**
+- Material: Aluminum 7075-T6 (σy = 480 MPa, σu = 540 MPa)
+- Geometry: h=800 mm, b=400 mm, tw=10 mm, tf=22 mm
+- Max bending stress (Limit): **570 MPa** (both spars)
+- Max bending stress (Limit - one spar): **285 MPa**
+- Margin of Safety (Ultimate): (σy/σmax*1.5) - 1 = (540/285*1.5)-1 = **0.26**
 
 ## 5. Optimization
 Parametric study on web and flange thickness.  
-**Achieved XX% weight reduction** while maintaining positive Margin of Safety (MS_ult > 0.18).
+**Achieved 9.35% weight reduction** while maintaining positive Margin of Safety (MS_ult ≥ 0.15).
+
+- Geometry: h=800 mm, b=400 mm, tw=22 mm, tf=19.91 mm
+- Max bending stress (Limit): **626.13 MPa** (both spars)
+- Max bending stress (Limit - one spar): **313 MPa** 
 
 ## 6. FEM Validation (FreeCAD + PrePoMax)
 - Shell element model
 - Classical vs FEM correlation: **< 5% difference** in peak stress
 - Mesh convergence performed
 
-*(Insert stress contour + displacement plots here)*
+<img width="1000" height="500" alt="4_FEM_Validation_with_Classical" src="https://github.com/user-attachments/assets/60da3790-e7e5-4822-beab-125824c1b676" />
+
 
 ## Key Quantified Achievements
 - Performed full static strength analysis on primary wing structure under real CS-25 +2.5g maneuver load case.
