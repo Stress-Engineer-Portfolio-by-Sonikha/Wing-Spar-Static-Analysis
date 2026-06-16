@@ -56,7 +56,16 @@ Parametric study on web and flange thickness.
 - Max bending stress (Limit - one spar): **313 MPa**
 - Displacement (delta_max) = (w0 * L**4) / (30 * E * I) = **982 mm**
 
-## 6. FEM Validation (FreeCAD + PrePoMax)
+## 6. Design & FEM Validation (FreeCAD + PrePoMax)
+
+**CAD Model:**
+<img width="1918" height="985" alt="spar_geometry" src="https://github.com/user-attachments/assets/12038024-9f6e-4c54-ab5d-5ff54f50a990" />
+
+**Finite Element Model:**
+<img width="1911" height="986" alt="Spar_mesh" src="https://github.com/user-attachments/assets/40e2e51d-4c41-4c9e-8d8f-bd7a6fe3665b" />
+
+<img width="1916" height="987" alt="Spar_triangular_load" src="https://github.com/user-attachments/assets/c2f4eb7c-5d16-4c3b-bc78-0781fa0a21ca" />
+
 - Shell element model
 - Classical vs FEM correlation: **< 5% - 8% difference** in peak stress
 - Mesh convergence performed
